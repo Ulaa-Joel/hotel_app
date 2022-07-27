@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <div class="nav container">
+        <!-- Navbar -->
+        <ul class="navbar">
+            <li><a href="./index.html" class="nav-link">Home</a></li>
+            <li><a href="./book.html" class="nav-link">Reservation</a></li>
+        </ul>
+        <div class="admin"><a href="./admin-login.html" class="nav-link">Admin</a></div>
+    </div>
+    <section class="main container" id="home">
+        <div class="column">
+            <img src="./images/hotel3.jpg" alt="" srcset="">
+            <h1>The perfect place to call home away from home</h1>
+        </div>
+        <div class="column1">
+            <div class="take">
+                <button>Ready to <strong>Make a Reservation?</strong></button>
+            </div>
+            <form class="form" action="./book.html">
+                <div class="master">
+                    <input type="text" class="input" placeholder="First Name">
+                </div>
+                <div class="master">
+                    <input type="text" class="input" placeholder="Last Name">
+                </div>
+                <div class="master">
+                    <input type="text" class="input" placeholder="Mobile number">
+                </div>
+                <div class="master">
+                    <input type="email" class="input" placeholder="Email Address">
+                </div>
+                <div class="master">
+                    <input type="password" class="input" placeholder="Password">
+                </div>
+                <div class="master">
+                    <button id="btn2">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

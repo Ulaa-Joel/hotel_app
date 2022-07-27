@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    max-width: 100%;
+}
+:root {
+    --main-color: #647bff;
+    --body-color: #090a1a;
+    --container-color: #171b3c;
+    --heading-color: #222231;
+    --box-color: #0d0f26;
+    --bg-color: #fff;
+}
+body {
+    color: var(--bg-color);
+    background: var(--body-color);
+    max-width: 900px;
+    max-height: 600px;
+    margin: auto;
+}
+.body {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+.admin-login {
+    /* background-color: var(--main-color); */
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    padding-top: 5rem;
+    margin-top: 4rem;
+}
+.admin-container {
+    max-width: 900px;
+    max-height: 600px;
+    width: 100%;
+    height: 100%;
+}
+.admin-input {
+    padding-left: 150px;
+}
+.admin-input input{
+    height: 100px;
+    width: 70%;
+}
+.admin-input button {
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+.sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    border: 1px solid var(--box-color);
+    width: 46%;
+}
+.details {
+    border: 1px solid var(--box-color);
+}
+.logout {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+.logout button {
+    cursor: pointer;
+}
