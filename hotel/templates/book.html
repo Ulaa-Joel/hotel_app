@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}"> 
+</head>
+<body>
+    <section class="rooms">
+        <!-- Header -->
+        <div class="nav container">
+            <!-- Navbar -->
+            <ul class="navbar">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="book" class="nav-link">Reservation</a></li>
+            </ul>
+            <!-- <div class="admin"><a href="admin/" class="nav-link">Admin</a></div> -->
+        </div>
+        <section class="rooms-container">
+            <h1 class="section-head">
+                <span class="heading">Luxurious</span>
+                <span class="sub-heading">Affordable rooms</span>
+            </h1>
+            <div class="room-container">
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img src="{% static './images/room1.jpg' %}" alt="" class="room-image">
+                    </div>
+                    <div class="room-info">
+                        <span class="room-price" id="1">${{room_price}}</span>
+                        <a href="base" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img src="{% static './images/room2.jpg' %}" alt="" class="room-image">
+                    </div>
+                    <div class="room-info">
+                        <span class="room-price">${{room_price}}</span>
+                        <a href="base" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img src="{% static './images/room3.jpg' %}" alt="" class="room-image">
+                    </div>
+                    <div class="room-info">
+                        <span class="room-price">${{room_price}}</span>
+                        <a href="base" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img src="{% static './images/room4.jpg' %}" alt="" class="room-image">
+                    </div>
+                    <div class="room-info">
+                        <span class="room-price">${{room_price}}</span>
+                        <a href="base" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+                <div class="rooms-grid">
+                    <div class="image-wrap">
+                        <img src="{% static './images/room5.jpg' %}" alt="" class="room-image">
+                    </div>
+                    <div class="room-info">
+                        <span class="room-price">${{room_price}}</span>
+                        <a href="base" class="btn rooms-btn">Book now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

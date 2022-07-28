@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}"> 
+</head>
+<body>
+    <section class="header">
+        <!-- Header -->
+        <div class="nav container">
+            <!-- Navbar -->
+            <ul class="navbar">
+                <li><a href="/" class="nav-link">Home</a></li>
+                <li><a href="book" class="nav-link">Reservation</a></li>
+            </ul>
+            <div class="admin"><a href="admin/" class="nav-link">Admin</a></div>
+        </div>
+    </section>
+    <section class="main">
+        <div class="overview">
+            <div>
+                <h1>Dashboard Overview</h1><br><br><br>
+                <p>Thanks for choosing us!</p>
+            </div>
+            <div>
+                <button>Last 30 days</button>
+                <button>Reports</button>
+            </div>
+        </div>
+        <div class="content">
+            <div class="two">
+                <div class="four">
+                    <h4>Total Booking</h4><br>
+                    <p>8,230</p>
+                </div>
+                <div class="three">
+                    <span>THIS MONTH <br> 83</span>
+                    <span>THIS WEEK <br> 31</span>
+                </div>
+            </div>
+            <div class="two">
+                <div class="four">
+                    <h4>Rooms Available</h4><br>
+                    <p>40</p>
+                </div>
+                <div class="three">
+                    <span>BOOKED (MONTH) <br> 23</span>
+                    <span>BOOKED (WEEK) <br> 15</span>
+                </div>
+            </div>
+            <div class="two">
+                <div class="four">
+                    <h4>Expenses</h4><br>
+                    <p>81,230 USD</p>
+                </div>
+                <div class="three">
+                    <span>THIS MONTH <br> 4913 USD</span>
+                    <span>THIS WEEK <br> 725 USD</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
